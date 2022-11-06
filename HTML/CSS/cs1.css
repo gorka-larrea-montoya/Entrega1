@@ -23,9 +23,6 @@ Ha añadido algún estilo para una determinada resolución de pantalla
 .topbar li{
     float: left;
 } 
-.topbar li  [href *= side3]{
-    float:right
-}
 .topbar a:hover {
     background-color: #dddddd;
     color: black;
@@ -48,7 +45,19 @@ Ha añadido algún estilo para una determinada resolución de pantalla
 }
 
 body {/*esto sólo para que la barra se pegue al techo bien pero luego el resto de cosas hay que meterles padding o queda raro*/
-    margin: 0; 
+    margin: 0; /* no sé como se sostiene esto */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h3{
+    border-bottom: 1px solid #1bb9c2;
+    width: 50%;
+}
+article:nth-of-type(even){
+    background-color: #dddddd;
+}
+article:nth-of-type(odd){
+    background-color: #eeeeee;
 }
 .maintex{
     padding: 50px; 
@@ -82,7 +91,63 @@ body {/*esto sólo para que la barra se pegue al techo bien pero luego el resto 
     background-image: url(images/palisade.jpg);
     background-color: darkmagenta;
 }
-#side3{
-    background-image: url(images/unity.png);
-    background-color: darkolivegreen;
+main{
+    padding:10px;
 }
+aside#r{
+padding: 3px;
+width: 18.1%; 
+background-color:grey;
+float:right;
+}
+img{
+ opacity:1 ; /*puro debugging */
+ width:100%;
+ height: auto;
+}
+footer{ 
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color: lightgray;
+    font-size: 10px;
+    height: 10px;
+}
+#album{
+    
+    width: 100%;
+    align-items: center;
+  
+}
+div.polaroid {  
+    padding:5px;
+    width: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  /* tecnología de polaroide robada de 
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_card 
+  con descaro y alevosía*/
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  /*tecnología de footer robada de 
+https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  fieldset{
+    width: 50%;
+  }
+  
+
+
