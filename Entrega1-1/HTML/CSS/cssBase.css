@@ -1,4 +1,4 @@
-/* TODO 
+ /* TODO 
 Todos los elementos HTML empleados en las página tienen uno o varios estilos
 Utiliza los selectores de forma adecuada (selector de tipo, clases, id)
 Hace uso de pseudo-clases en al menos un tipo de elemento (enlace, botón,...)
@@ -8,6 +8,7 @@ Se diferencian los bloques de forma clara ya que se han añade bordes o especifi
 Se han definido márgenes internos y externos en los elementos HTML para mejorar la apariencia
 Ha añadido algún estilo para una determinada resolución de pantalla
 */
+
 .topbar ul {
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
@@ -23,9 +24,6 @@ Ha añadido algún estilo para una determinada resolución de pantalla
 .topbar li{
     float: left;
 } 
-.topbar li  [href *= side3]{
-    float:right
-}
 .topbar a:hover {
     background-color: #dddddd;
     color: black;
@@ -48,8 +46,24 @@ Ha añadido algún estilo para una determinada resolución de pantalla
 }
 
 body {/*esto sólo para que la barra se pegue al techo bien pero luego el resto de cosas hay que meterles padding o queda raro*/
-    margin: 0; 
+    margin: 0; /* no sé como se sostiene esto */
+    font-family: Arial, Helvetica, sans-serif;
+
 }
+
+footer{
+position: sticky;
+bottom:0;
+font-size:10px;
+height: 11px;
+width:100%;
+background-color: lightgray;
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .maintex{
     padding: 50px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -61,28 +75,10 @@ body {/*esto sólo para que la barra se pegue al techo bien pero luego el resto 
     -webkit-text-stroke: 1px black;
 
 }
+
 .maintex h1{
     font-size: 50px;
 }
 .maintex h2{
     font-size: 30px;
-}
-
-#main {
-    background-image: url(images/desperado.jpg);
-    background-color: #072931; /*fondo general si fallan las imagenes*/
-}
-
-#side1{
-    background-image: url(images/maya.jpg);
-    background-color: brown;
-}
-#side2{
-    
-    background-image: url(images/palisade.jpg);
-    background-color: darkmagenta;
-}
-#side3{
-    background-image: url(images/unity.png);
-    background-color: darkolivegreen;
 }
