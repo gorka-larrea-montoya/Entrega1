@@ -1,57 +1,98 @@
-article:nth-of-type(even){
+article:nth-of-type(even) {
     background-color: #dddddd;
 }
-article:nth-of-type(odd){
+
+article:nth-of-type(odd) {
     background-color: #eeeeee;
 }
 
+
+
 .maintex {
     background-image: url(images/desperado.jpg);
-    background-color: #072931; /*fondo general si fallan las imagenes*/
-}
-main{
-    padding:10px;
-
+    background-color: #072931;
+    /*fondo general si fallan las imagenes*/
 }
 
-aside#r{ /*TODO hacer que esto se vea distinto en móvil*/
+main {
+    padding: 10px;
+}
+
+aside#r {
+    /*TODO hacer que esto se vea distinto en móvil*/
     padding: 3px;
-    width: 20%; 
-    background-color:grey;
-    float:right;
+    width: 20%;
+    background-color: grey;
+    float: right;
     height: 100%;
-    position:relative;
-    top:0px;
-    bottom:0px;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
 }
 
-#r img{
+#r img {
     width: 100%;
 }
-main{
+
+main {
     background-color: lightgrey;
 }
-article{
-    padding: 0px;
-    width:80%
+
+article {
+    padding: 1px;
+    width: 80%
 }
 
-article#lorem{
-    padding:10px;
+article#lorem {
+    padding: 10px;
 }
-#lorem span:nth-of-type(3n){
- color: darkgreen;
- font-weight: bold;
+
+#lorem span:nth-of-type(3n) {
+    color: darkgreen;
+    font-weight: bold;
 }
-#lorem span:nth-of-type(3n+1){
+
+#lorem span:nth-of-type(3n+1) {
     color: darkgoldenrod;
     font-style: italic;
     text-decoration: underline wavy 1px;
     text-decoration-color: goldenrod;
 }
-#lorem span:nth-last-of-type(3n+2){
-    color:darkred;
+
+#lorem span:nth-last-of-type(3n+2) {
+    color: darkred;
     font-style: bold;
     font-size: 1.1em;
-    text-decoration:darkgreen 1px underline overline;
+    text-decoration: darkgreen 1px underline overline;
+}
+h3{
+    border-bottom: 1px solid #1bb9c2;
+    width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    /*#mobile { debugging cutrillo
+        color: bisque;
+        background-color: black;
+    }*/
+    aside#r {
+        /*padding: 3px;
+        width: 20%;
+        background-color: grey;
+        float: right;
+        height: 100%;
+        position: relative;
+        top: 0px;
+        bottom: 0px;*/
+        width:100%;
+        position:relative;
+        
+    }
+    #r img {
+        width: 32%;
+    }
+
+    article{
+        width: 100%;
+    }
 }
