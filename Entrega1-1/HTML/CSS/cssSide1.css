@@ -2,3 +2,28 @@
     background-image: url(images/maya.jpg);
     background-color: brown;
 }
+
+main{
+    width: 100% ;
+}
+article {
+    padding: 10px;
+    min-width: 10em;
+    max-width: 900px;
+    background-color: #dddddd;
+}
+h3{
+    border-bottom: 3px dotted greenyellow;
+    width: 40%;
+}
+div#YT{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+iframe#YT{
+    width: 600px; 
+    height: 337px;
+
+}
