@@ -1,4 +1,48 @@
-.maintex{
+.maintex {
     background-image: url(images/palisade.jpg);
     background-color: darkmagenta;
+}
+
+main{
+    background-color: aliceblue;
+}
+fieldset{
+    background-color: whitesmoke;
+}
+form input {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.f1 .col30 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.f1.col70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+@media only screen and (max-width: 800px){
+    form{
+        font-size: 11px;
+    }
+    form div{
+        min-height: 21px;
+    }
+}
+.f1{
+    width: 90%;
+    height:141px;
+}
+.f2{
+    width: 90%;
+    height:141px;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 6fr 4fr; 
 }
